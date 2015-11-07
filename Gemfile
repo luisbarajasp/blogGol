@@ -9,6 +9,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem "paperclip", "~> 4.3"
 gem 'jquery-rails', '~> 4.0', '>= 4.0.5'
 gem 'turbolinks', '~> 2.5', '>= 2.5.3'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'fancybox-rails'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug'

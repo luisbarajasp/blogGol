@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BlogGol</title>
+	<meta charset="UTF-8">
+	<title>Gol Gana</title>
+
+	<script src="js/welcome.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main_navigation" class="clearfix">
+		<a href="index.html" class="name">Gol Gana</a>
+		<nav id="icons">
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+		</nav>
+		<nav>
+			<%= link_to "Articulos", posts_path %>
+			<a href="memes.html">Memes del día</a>
+			<a href="#">¿Quiénes Somos?</a>
+		</nav>
+	</header>
 
 <%= yield %>
 
