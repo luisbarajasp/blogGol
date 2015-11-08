@@ -12,7 +12,8 @@ gem 'turbolinks', '~> 2.5', '>= 2.5.3'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'fancybox-rails'
 gem "font-awesome-rails"
-gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 4.x
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'pygments.rb', '~> 0.6.3'
 
 group :development, :test do
   gem 'byebug'

@@ -1,6 +1,6 @@
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
 	<header>
-		<p class="date"><%= @post.created_at.strftime('%B %d, %I:%M %P') %></p>
+		<p class="date"><%= @post.created_at.strftime('%b %d, %I:%M %P') %></p>
 		<h1><%= @post.title %></h1>
 		<a class="creator" href="#">El figura</a>
 		<a class="league" href="#">UEFA Champions League</a>
@@ -11,7 +11,7 @@
 		
 	<div class="content">
 		<h2>Tiro al ángulo</h2>
-		<%= @post.content %>
+		<%= markdown @post.content %>
 	</div>
 		
 	<hr>
@@ -29,3 +29,5 @@
 	<hr>
 
 </div>	
+<%= link_to "Editar", edit_post_path(@post) %>
+<%= link_to "Eliminar", post_path(@post), method: :delete, data: {confirm: "¿Estás seguro que deseas eliminar este artículo?"} %>

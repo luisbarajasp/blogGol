@@ -8,11 +8,7 @@ Bundler.require(*Rails.groups)
 
 module BlogGol
   class Application < Rails::Application
-
-    I18n.available_locales = ['es-MX']
-
-    config.time_zone = 'Mexico City' # set default time zone to "Moscow" (UTC +4)
-    config.i18n.default_locale = 'es-MX' # set default locale to Mexico
+    # set default time zone to "Moscow" (UTC +4)
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
