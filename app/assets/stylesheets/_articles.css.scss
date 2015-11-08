@@ -6,22 +6,6 @@ $cream: #e5d8be;
 $blue: #8da29b;
 $white: #fff;
 $gray: #66757F;
-.col-1, .col-2, .col-3{
-	float: left;
-}
-
-.col-1{
-	width: 33%;
-	padding: 0 5% 0 2.5%;
-	hr{
-		vertical-align: middle;
-	}
-}
-
-.col-2, .col-3{
-	width: 33%;
-	padding: 0 2.5%;
-}
 
 .center{
 	text-align: center;
@@ -38,53 +22,70 @@ $gray: #66757F;
 #posts_wrapper{
 	padding: 0 0 0 3rem;
 	.post{
-		margin-top: 3rem;
-		position: relative;
-		.img-centered{
-			margin: auto;
-			width: 100%;
-			height: auto;
+		.thumbnail{
+			margin-top: 3rem;
+			position: relative;
+			.img-centered{
+				margin: auto;
+				width: 100%;
+				height: auto;
+			}
 		}
 		width: 100%;
-		height: 400px;
 		text-align: center;
-		.date{
-			padding: 0 3em 0 0;
-			font-size: .9em;
-			margin: 0;
-			text-align: right;
-			color: $white;
-		}
-		.post-content {
-			width: 100%;
-			height: 100%;
-			h2{
+	}
+	.date{
+		padding: 0 3em 0 0;
+		font-size: .9em;
+		margin: 0;
+		text-align: right;
+		color: $white;
+	}
+	.post-content {
+		width: 100%;
+		height: 100%;
+		h2{
 			font-size: 2em;
 			text-transform: uppercase;
 			margin: 0;
-				a{
-					text-decoration: none;
-					color: $white;
-					&:hover{
-						color: $blue;
-					}
+			a{
+				text-decoration: none;
+				color: $white;
+				&:hover{
+					color: $blue;
 				}
 			}
-    		top:0;
-    		left:0;
-    		position: absolute;
 		}
+   		top:0;
+   		left:0;
+   		position: absolute;
+	}
 
-		#grad {
-  			background: -webkit-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
-  			background: -o-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
-  			background: -moz-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
- 			background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* Standard syntax */
-		}
+	#grad {
+  		background: -webkit-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+  		background: -o-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+  		background: -moz-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+ 		background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,0)); /* Standard syntax */
+	}
 		
-		hr{
-			margin: 3em auto;
+	hr{
+		margin: 3em auto;
+	}
+}
 
+
+.menu_articles{
+
+	.row{
+		.col-md-4{
+			h3 a{
+				text-decoration: none;
+				color: $dark;
+				&:hover{
+					color: $blue;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }

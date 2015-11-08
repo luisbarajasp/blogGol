@@ -8,7 +8,7 @@
 						<div class="thumbnail">
 							<%= image_tag(post.image.url) %>
 							<div id= "grad" class="caption post-content">
-								<p class="date"><%= post.created_at.strftime("%b %d, %H:%M") %></p>
+								<p class="date"><%= post.created_at.strftime('%d/%m/%y, %I:%M %P') %></p>
 								<h3><a href="#"><%= link_to post.title, post %></a></h3>
 							</div>
 						</div>
