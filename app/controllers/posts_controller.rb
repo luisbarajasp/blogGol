@@ -41,12 +41,16 @@ class PostsController < ApplicationController
 		redirect_to posts_path
 	end
 
+	def should_generate_new_friedly_id?
+   		slug.blank? || title_changed?
+	end
+
 	private
 
 		def post_params
-			params.require(:post).permit( :image, :title, :content)
+			params.require(:post).permit( :image, :title, :content, :slug)
 		end
 		def find_post
-			@post = Post.find(params[:id])
+			@post = Post.friendly.find(params[:id])
 		end
 end

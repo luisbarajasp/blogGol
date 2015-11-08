@@ -14,6 +14,7 @@ gem 'fancybox-rails'
 gem "font-awesome-rails"
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'pygments.rb', '~> 0.6.3'
+gem 'friendly_id', '~> 5.1'
 
 group :development, :test do
   gem 'byebug'
