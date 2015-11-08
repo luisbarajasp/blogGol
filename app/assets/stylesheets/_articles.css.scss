@@ -1,3 +1,11 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+$cream: #e5d8be;
+$blue: #8da29b;
+$white: #fff;
+$gray: #66757F;
 .col-1, .col-2, .col-3{
 	float: left;
 }
@@ -33,7 +41,7 @@
 		margin-top: 3rem;
 		position: relative;
 		.img-centered{
-			vertical-align: center;
+			margin: auto;
 			width: 100%;
 			height: auto;
 		}
@@ -106,9 +114,9 @@
 		margin: 3em auto;
 	}
 
-	img.img-center{
+	.img-center{
 		display: block;
-    	margin: 0 auto;
+    	margin: auto;
 		margin-bottom: 1rem;
 		width: 60%;
 		height: auto;

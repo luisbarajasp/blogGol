@@ -10,15 +10,20 @@
 		</ul>
 
 	<% end %>
-
-	<%= f.label :title, "Título" %> <br>
-	<%= f.text_field :title %> <br>
-	<br>
-	<%= f.label :content, "Escribe tu artículo aquí" %> <br>
-	<%= f.text_area :content %> <br>
-	<br>
-	<%= f.label :image %><br>
-    <%= f.file_field :image, class: "form-control" %> <br>
-	<%= f.submit %>
+	<div class="form-group">
+		<%= f.label :title, "Título" %> <br>
+		<%= f.text_field :title, class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :content, "Escribe tu artículo aquí" %> <br>
+		<%= f.text_area :content, class: "form-control" %> 
+	</div>
+	<div class="form-group">
+		<%= f.label :image %><br>
+    	<%= f.file_field :image, class: "form-control" %> <br>
+    </div>
+	<div class="form-group">
+   	 	<%= f.submit class: "btn btn-success" %>
+ 	</div>
 
 <% end %>

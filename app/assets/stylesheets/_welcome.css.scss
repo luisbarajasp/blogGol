@@ -1,5 +1,16 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+$cream: #e5d8be;
+$blue: #8da29b;
+$white: #fff;
+$gray: #66757F;
 .homepage_content{
 	width: 100%;
+	.thumbnail img { 
+		min-height:220px; height:220px; 
+	}
 	h2{
 		font-size: 1.1em;
 		text-transform: uppercase;

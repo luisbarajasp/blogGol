@@ -25,10 +25,14 @@ class PostsController < ApplicationController
 	end
 
 	def update
-		if @post.update post_params
-			redirect_to @post, notice: "Tu artículo se guardo satisfactoriamente con el nuevo material"
-		else
-			render 'edit'
+		respond_to do |f|
+			if @post.update(post_params)
+				f.html {redirect_to @post, notice: "Tu artículo se guardo satisfactoriamente con el nuevo material"}
+				f.json { render :show, status: :ok, location: @post }
+			else
+				f.html { render :edit }
+				f.json { render json: @post.errors, status: :unprocessable_entity }
+			end
 		end
 	end
 
@@ -40,7 +44,7 @@ class PostsController < ApplicationController
 	private
 
 		def post_params
-			params.require(:post).permit(:title, :content)
+			params.require(:post).permit( :image, :title, :content)
 		end
 		def find_post
 			@post = Post.find(params[:id])
