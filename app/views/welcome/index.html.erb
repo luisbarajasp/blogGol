@@ -1,4 +1,13 @@
 <div class="wrapper wrapper_padding clearfix">
+		
+		<% if user_signed_in? %>
+
+			<div id="admin_links">
+				<%= link_to "Crear Nuevo Artículo", new_post_path(@post) %>
+			</div>
+
+		<% end %>
+
 		<div class="homepage_content">
 			<h2>Más Recientes</h2>
 			<hr>
@@ -16,7 +25,7 @@
 				<% end %>
 			</div>
 			<div class="content">
-				<a class="button" href="#">Ver más →</a>
+				<a class="button" href="/posts?page=2">Ver más →</a>
 			</div>
 		</div>
 

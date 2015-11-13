@@ -16,8 +16,8 @@
 			</div>
 		<% end %>
 	</div>
-
-	<%= will_paginate @posts %>
+	
+	<%= will_paginate @posts, :previous_label => 'Anterior', :next_label => 'Siguiente' %>
 	
 	<div class="wrapper wrapper_padding clearfix menu_articles">
 		<div class="row">
